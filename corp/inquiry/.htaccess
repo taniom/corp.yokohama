@@ -1,0 +1,9 @@
+Options +ExecCGI
+AddHandler cgi-script .cgi
+AddHandler cgi-script .pl
+
+DirectoryIndex index.html index.cgi index.php index.shtml postmail.html
+
+# RewriteEngine on
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]

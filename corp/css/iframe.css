@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+/* ========BASIC======== */
+html {
+	overflow-y:scroll;
+}
+
+
+/* ======== tableIframe ======== */
+#tableIframe table {
+/*
+	width:600px;
+*/
+	width:100%;
+/*
+	margin:10px;
+*/
+	margin:0px 0px 0px 0px;
+	border-collapse:collapse;
+	border:1px solid #999;
+/*
+	border:0px solid #999;
+*/
+	border-spacing:0;
+	line-height:1.2em;
+	font-size:12px;
+}
+
+#tableIframe table th {
+	padding:2px 0px 2px 20px;
+	border:1px solid #999;
+/*
+	border-width:0 0 1px 1px;
+*/
+	border-width:1px 1px 1px 1px;
+	background:#EFEBEF;
+	font-weight:bold;
+	text-align:left;
+}
+
+#tableIframe table td {
+/*
+	padding:5px;
+*/
+	padding:1px 30px 1px 20px;
+	border:1px solid #999;
+/*
+	border-width:0 0 1px 1px;
+*/
+	border-width:1px 1px 1px 1px;
+	text-align:left;
+}
+
+#tableIframe table td ol {
+	margin:0;
+	padding:0 0 0 30px;
+}
+
+#tableIframe table td li {
+	margin:0;
+	padding:0;
+}
+
+#tableIframe input[type=text] {
+	width:100%;
+}
+
+#tableIframe textarea {
+	width:100%;
+}
+
+/* ======== btnIframe ======== */
+#btnIframe {
+	width:94%;
+	margin:10px 0px 0px 0px;
+	padding:0px;
+}
+
+#btnIframe ul {
+	width:100%;
+	margin:0px 0px 0px 0px;
+	list-style:none;
+}
+
+#btnIframe li {
+	width:100%;
+	margin:0px 0px 10px -40px;
+	padding:10px;
+	list-style:none;
+	background:#EFEBEF;
+}
+
+
+/* ======== contentsIframe ======== */
+#contentsIframe {
+/*
+	float:left;
+*/
+	width:100%;
+	padding:0px 0px;
+	background:#fff;
+}
+
+
+/* ======== pageTopIframe ========= */
+#pageTopIframe {
+	position:fixed;
+	right:0;
+	bottom:0;
+	padding:10px;
+	background:#000
+}
+
+#pageTopIframe a {
+	padding:0 0 0 12px;
+	color:#fff;
+	font-size:11px;
+	background:#000 url("../figure/bg_pagetop.gif") 0 50% no-repeat;
+}
+
+
+
+/* ======== msgError ========= */
+#msgError {
+	font-size:20px;
+}
+
+.msgError {
+	color:#dd0000;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+
+/* ======== msgInfoIframe ========= */
+#msgInfoIframe {
+	line-height:1.2em;
+}

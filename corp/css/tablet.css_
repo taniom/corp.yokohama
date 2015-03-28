@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+/* PC”Å‚Æ‹¤’Ê */
+@import url(pc.css)

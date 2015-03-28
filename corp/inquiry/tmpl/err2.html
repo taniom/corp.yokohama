@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="description" content="お問合せフォーム入力エラー" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../css/iframe.css" type="text/css" />
+		<script type="text/javascript" src="../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+		<style type="text/css">
+			<!--
+/*
+			span.msgError { color:#dd0000; }
+*/
+			-->
+		</style>
+		<title>お問合せフォーム | 横濱商會</title>
+	</head>
+	<body>
+		<div id="contentsIframe">
+			<div id="msgInfoIframe">
+				<p>エラー</p>
+				<p>下記メッセージを確認のうえ、前画面に戻って正しく入力してください</p>
+			</div><!-- /#msgInfoIframe -->
+			<div id="tableIframe">
+				<table class="form">
+					<!-- cell_begin -->
+					<tr>
+						<th><p>!key!</p></th>
+						<td><p>!val!</p></td>
+					</tr>
+					<!-- cell_end -->
+				</table>
+			</div><!-- /#tableIframe -->
+			<div id="btnIframe">
+				<form action="!mail_cgi!" method="post">
+					<ul>
+						<li><input type="button" value="&lt; 　　　　　　戻る　　　　　　　" onclick="history.back()"></li>
+					</ul>
+				</form>
+			</div><!-- /#btnIframe -->
+		</div><!-- /#contentsIframe -->
+		<!-- /#pageTopIframe -->
+	</body>
+</html>

@@ -1,0 +1,6 @@
+ErrorDocument 400 /400_iframe/
+ErrorDocument 401 /401_iframe/
+ErrorDocument 403 /403_iframe/
+ErrorDocument 404 /404_iframe/
+ErrorDocument 500 /500_iframe/
+ErrorDocument 503 /503_iframe/

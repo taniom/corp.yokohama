@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="description" content="お問合せ確認" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../css/iframe.css" type="text/css" />
+		<script type="text/javascript" src="../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+		<title>お問合せ | 横濱商會</title>
+	</head>
+	<body>
+		<div id="contentsIframe">
+			<div id="msgInfoIframe">
+				<p>
+					以下の内容でよろしければ「送信」ボタンを押して下さい
+				</p>
+			</div><!-- /#msgInfoIframe -->
+			<div id="tableIframe">
+				<table summary="問合せフォーム" class="form">
+					<!-- cell_begin -->
+					<tr>
+						<th><p>!key!</p></th>
+						<td><p>!val!</p></td>
+					</tr>
+	<!--
+					<tr>
+						<th>!key!</th>
+					</tr>
+					<tr>
+						<td>!val!</td>
+					</tr>
+	-->
+					<!-- cell_end -->
+				</table>
+			</div><!-- /#tableIframe -->
+			<div id="btnIframe">
+				<form action="!mail_cgi!" method="post">
+					<!-- hidden -->
+					<ul>
+						<li><input type="submit" value="　　　　　　　送信　　　　　　　" class="button" /></li>
+						<li><input type="button" value="&lt; 　　　　　　戻る　　　　　　　" onclick="history.back()" class="button" /></li>
+					</ul>
+				</form>
+			</div><!-- /#btnIframe -->
+		</div><!-- /#contentsIframe -->
+		<!-- /#pageTopIframe -->
+	</body>
+</html>

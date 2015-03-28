@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="description" content="開発期間１ヶ月で、大幅な業務効率化を実現してみませんか？" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="google-site-verification" content="kWdwwzHlX6-mwMtt_yoJWws-ZNaJFIu9pGA9XDMoGrw" />
+		<link rel="stylesheet" href="./css/common.css" type="text/css" />
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			$('#slide').slideshow({
+				autoSlide	: true,
+				effect		: 'fade',
+				type		: 'repeat',
+/*
+				interval	: 3000,
+*/
+				interval	: 5000,
+				duration	: 500,
+				imgHoverStop: true,
+				navHoverStop: true
+			});
+			$(window).load(function() {
+				$(".topNaviColumn").uniformHeight();
+			});
+		});
+		</script>
+		<title>横濱商會</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+<!--
+				<h1><a href="./"><img src="./figure/logo.png" width="120" alt="横濱商會" /></a></h1>
+-->
+				<h1><a href="./"><img src="./figure/logo.png" alt="横濱商會" /></a></h1>
+				<div id="menu">
+					<ul>
+						<li><a href="./" class="currentPage">トップ</a></li>
+						<li><a href="./about/">会社概要</a></li>
+						<li><a href="./inquiry/">お問合せ</a></li>
+					</ul>
+				</div><!-- /#menu -->
+			</div><!-- /#header -->
+			<div id="slide">
+				<ul class="slideInner">
+					<li><img src="./figure/icatch01.jpg" alt="横濱商會" /></li>
+					<li><img src="./figure/icatch02.jpg" alt="横浜商会" /></li>
+					<li><img src="./figure/icatch03.jpg" alt="横浜紹介" /></li>
+				</ul>
+<!--
+				<div class="slidePrev"><img src="./figure/nav_prev.png" alt="前へ"></div>
+				<div class="slideNext"><img src="./figure/nav_next.png" alt="次へ"></div>
+-->
+				<div class="slidePrev"><img src="./figure/nav_prev.png" alt="横浜照会"></div>
+				<div class="slideNext"><img src="./figure/nav_next.png" alt="横濱商会"></div>
+				<div class="controlNav"></div>
+			</div><!-- /#slide -->
+			<div id="contents">
+				<div class="topNavi">
+					<div class="topNaviColumn">
+						<h2>代表取締役メッセージ</h2>
+<!--
+						<div class="topNaviPhoto"><img src="./figure/photo01.jpg" alt="" /></div>
+-->
+						<p>営業・経理事務が締日にオーバーフローする。<br /><br />締処理の為、年末年始・大型連休に社員を休ませられない。<br /><br />複雑な事務処理が社員にストレスを与えている。<br /><br />そんなお悩みは、膨大な要件定義・受入テスト工数、多額の外注費を要する本格的なシステムによらず、簡易なツールで短期間かつ安価に解決出来る場合があります。<br /><br />横濱商會にご相談下さいませ。</p>
+<!--
+						<p class="topNaviDetail"><a href="./">詳しくはこちら</a></p>
+-->
+					</div><!-- /.topNaviColumn -->
+					<div class="topNaviColumn">
+						<h2>事業</h2>
+<!--
+						<div class="topNaviPhoto"><img src="./figure/photo02.jpg" alt="" /></div>
+-->
+						<p>業務効率化の提案<br /><br />システム開発</p>
+<!--
+						<p class="topNaviDetail"><a href="./service/">詳しくはこちら</a></p>
+-->
+					</div><!-- /.topNaviColumn -->
+					<div class="topNaviColumn">
+						<h2>会社概要</h2>
+<!--
+						<div class="topNaviPhoto"><img src="./figure/photo03.jpg" alt="" /></div>
+-->
+						<p>■商号<br />株式会社横濱商會<br /><br />■本店<br />横浜市</p>
+						<p class="topNaviDetail"><a href="./about/">詳しくはこちら</a></p>
+					</div><!-- /.topNaviColumn -->
+				</div><!-- /.topNavi -->
+				<div id="conL">
+					<div class="information">
+						<h2>お知らせ</h2>
+						<dl>
+							<dt>
+								2015年3月15日
+							</dt>
+							<dd>
+								Ｗｅｂサイトをレスポンシブ化しました
+							</dd>
+							<dt>
+								2015年2月15日
+							</dt>
+							<dd>
+								Ｗｅｂサイトをリニューアルしました
+							</dd>
+							<dt>
+								2015年2月8日
+							</dt>
+							<dd>
+								Ｗｅｂサイトを公開しました
+							</dd>
+							<dt>
+								2015年2月2日
+							</dt>
+							<dd>
+								株式会社横濱商會を設立しました
+							</dd>
+<!--
+							<dt>
+								2015年2月15日
+							</dt>
+							<dd>
+								<a href="./">会社概要</a>を更新しました
+							</dd>
+-->
+						</dl>
+					</div><!-- /.information -->
+<!--
+					<div class="submenu">
+						<h3>業務</h3>
+						<h4>システム開発</h4>
+						<p></p>
+						<ul>
+							<li><a href="./service/">　</a></li>
+							<li><a href="./service/">　</a></li>
+						</ul>
+						<h4>Ｗｅｂサイト構築</h4>
+						<ul>
+							<li><a href="./service/">　</a></li>
+							<li><a href="./service/">　</a></li>
+						</ul>
+					</div>
+-->
+					<!-- /.submenu -->
+<!--
+					<div class="bnrL">
+						<ul>
+							<li><a href="./"><img src="./figure/bnr_l.jpg" alt="" /></a></li>
+							<li><a href="./"><img src="./figure/bnr_l.jpg" alt="" /></a></li>
+							<li><a href="./"><img src="./figure/bnr_l.jpg" alt="" /></a></li>
+						</ul>
+					</div>
+-->
+					<!-- /.bnrL -->
+				</div><!-- /.conL -->
+				<div id="conR">
+					<div class="submenu">
+					<h3>お問合せ</h3>
+						<h4>Ｗｅｂ</h4>
+						<ul>
+							<li><a href="./inquiry/">フォーム</a></li>
+						</ul>
+						<h4>ＴＥＬ</h4>
+						<ul>
+							<li><a>０４５－３６７－７０５７</a></li>
+						</ul>
+						<h4>ＦＡＸ</h4>
+						<ul>
+							<li><a>０４５－３６７－７０５７</a></li>
+						</ul>
+					</div><!-- /.submenu -->
+<!--
+					<div class="bnrR">
+						<ul>
+							<li><a href="./"><img src="./figure/bnr_r.jpg" alt="" /></a></li>
+							<li><a href="./"><img src="./figure/bnr_r.jpg" alt="" /></a></li>
+						</ul>
+					</div>
+-->
+					<!-- /.bnrR -->
+				</div><!-- /.conR -->
+			</div><!-- /#contents -->
+			<div id="footMenu">
+				<ul>
+					<li><a href="./">トップ</a></li>
+					<li><a href="./about/">会社概要</a></li>
+					<li><a href="./inquiry/">お問合せ</a></li>
+				</ul>
+			</div><!-- /#footerMenu -->
+			<div id="footer">
+				<div class="copyright">&copy; 2015 Yokohama Corp.</div>
+			</div><!-- /#footer -->
+		</div><!-- /#container -->
+		<div id="pageTop">
+			<a href="#">先頭へ</a>
+		</div><!-- /#pageTop -->
+	</body>
+</html>

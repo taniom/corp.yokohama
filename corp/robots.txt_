@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /sitemap.xml
+Allow: /css/
+Allow: /js/
+Allow: /figure/
+Allow: /about/
+Allow: /inquiry/

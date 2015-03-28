@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="description" content="お問合せ入力" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../css/iframe.css" type="text/css" />
+		<script type="text/javascript" src="../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+		<title>お問合せ | 横濱商會</title>
+	</head>
+	<body>
+		<div id="contentsIframe">
+			<div id="form">
+				<form action="../postmail.cgi" method="post">
+					<div id="tableIframe">
+<!--
+						<input type="hidden" name="need" value="name inquirerEmail inquiryType" />
+-->
+<!--
+						<input type="hidden" name="need" value="inquirerNm inquirerEmail inquiryType inquiryDesc" />
+-->
+						<input type="hidden" name="need" value="name email inquiryType inquiryDesc" />
+<!--
+						<input type="hidden" name="match" value="inquirerEmail inquirerEmail2" />
+-->
+						<table summary="問合せフォーム">
+							<tr>
+								<th>会社</th>
+							</tr>
+							<tr>
+								<td>
+									<p><input type="text" name="inquirerCom" /></p>
+								</td>
+							</tr>
+							<tr>
+								<th>お名前</th>
+							</tr>
+							<tr>
+								<td>
+									<p><input type="text" name="name" /></p>
+<!--
+									<p><input type="text" name="inquirerNm" /></p>
+-->
+								</td>
+							</tr>
+							<tr>
+								<th>メール</th>
+							</tr>
+							<tr>
+								<td>
+									<p><input type="text" name="email" /></p>
+<!--
+									<p>（再度入力）</p>
+									<p><input type="text" name="email2" /></p>
+-->
+								</td>
+							</tr>
+							<tr>
+								<th>種別</th>
+							</tr>
+							<tr>
+								<td>
+<!--
+									<p><input type="radio" name="種別" value="お見積り" />お見積り</p>
+									<p><input type="radio" name="種別" value="営業" />営業</p>
+									<p><input type="radio" name="種別" value="その他" />その他</p>
+-->
+									<p>
+<!--
+										<input type="radio" name="種別" value="お見積り">お見積り</input>
+										<input type="radio" name="種別" value="営業">営業</input>
+										<input type="radio" name="種別" value="その他">その他</input>
+-->
+										<input type="radio" name="inquiryType" value="お見積り">お見積り</input>
+										<input type="radio" name="inquiryType" value="営業">営業</input>
+										<input type="radio" name="inquiryType" value="その他">その他</input>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th>内容</th>
+							</tr>
+							<tr>
+								<td>
+<!--
+									<p><textarea name="inquiryDesc" rows="7"></textarea></p>
+-->
+									<p><textarea name="inquiryDesc" rows="3"></textarea></p>
+								</td>
+							</tr>
+						</table>
+					</div><!-- /#tableIframe -->
+					<div id="btnIframe">
+						<ul>
+							<li><input type="submit" value="　　　　　　　送　信　　　　　　　" /></li>
+							<li><input type="reset" value="　　　　　　　クリア　　　　　　　" /></li>
+						</ul>
+					</div><!-- /#btnIframe -->
+				</form>
+			</div><!-- /#form -->
+		</div><!-- /#contentsIframe -->
+<!--
+		<div id="pageTopIframe">
+			<a href="#">先頭へ</a>
+		</div>
+-->
+		<!-- /#pageTopIframe -->
+	</body>
+</html>

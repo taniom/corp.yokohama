@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="開発期間１ヶ月で、大幅な業務効率化を実現してみませんか？" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<title>あなたのサイト名などお書きください | 横濱商會</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1><a href="index.html"><img src="images/logo.gif" alt="SAMPLE WEB SITE" /></a></h1>
+        <div id="menu">
+            <ul>
+                <li class="home active"><a href="index.html">ホーム</a></li>
+                <li><a href="sample.html">事業内容</a></li>
+                <li><a href="sample.html">会社概要</a></li>
+                <li><a href="index.html">採用情報</a></li>
+                <li><a href="index.html">投資家情報</a></li>
+                <li><a href="index.html">グループ会社</a></li>
+            </ul>
+        </div><!-- /#menu -->
+    </div><!-- /#header -->
+    <div id="contents">
+        <div id="conL">
+            <h2>制作者より</h2>
+            <p>
+            企業サイトをはじめ、どんなホームページにもマッチしやすい汎用性の高いCSSデザインテンプレートです。試しに企業サイトにアレンジしてみました。
+            </p>
+            <p>
+            2013年に入り、IEもバージョン10が出て、Webサイト制作の状況もかなり変わってきております。Webサイト制作においても一般的にIE6～7はサポート対象外になり、CSSもバージョン3が主流となってきました。
+            </p>
+            <p>
+            当サイトでもその流れを汲み、このCSSテンプレートはIE10以上のブラウザ対象になっております。IEの下位バージョンでもレイアウト崩れを起こすことはないようにしておりますが、デザインが大きく異なって見えてしまいます。
+            </p>
+            <p>
+            これも、できるだけカスタマイズして欲しいという意図の現れでもあります。画像を使用することにより、IEの下位バージョンでもデザインを同じにすることは可能なのですが、そうすると色変更等に画像編集ソフトが必要となり、デザインに汎用性を持たせることができません。
+            </p>
+            <p>
+            一方で、画像を使用していないため、編集する際に画像編集が必要なく、CSSで自由に色の変更やグラデーションの変更が行えるようになっています。
+            </p>
+            <p>
+            見出しのグラデーションを変更するには、Webサービスを利用すると簡単にCSSを取得できます。色々あるのですが、サンプルからグラデーションのデザインを選ぶことのできる<a href="http://grad3.ecoloniq.jp/">Grad3</a>がお勧めです。
+            </p>
+            <h3>テンプレートサイズについて</h3>
+            <p>
+            完全幅固定タイプです。<br />
+            全体的な横幅は960px、メインコンテンツ部分620px（余白除く）、サブコンテンツ部分300px（余白除く）です。サブコンテンツ部分はメニューやバナー等を配置することを想定し、幅を広く取りました。<br />
+            </p>
+            <h3>インデックスページの画像のスライドショーについて</h3>
+            <p>
+            画像がスライドしながら自動で切り替わるように設定しています。切り替わる時間やスライドの時間などいろいろオプションが変更できます。サンプル画像は当方で撮影したものです。画像を差し替えてご利用ください。<br />
+            </p>
+            <h4>使い方について</h4>
+            <p>
+            HTMLファイルのheadタグ内にて、
+            </p>
+            <pre><code>
+    &lt;script type="text/javascript"&gt;
+    $(function() {
+        $('#headImage').slideshow({
+                autoSlide     : true,
+                effect         : 'fade',
+                type            : 'repeat',
+                interval      : 3000,
+                duration      : 500,
+                imgHoverStop : true,
+                navHoverStop : true
+        });
+    });
+    &lt;/script&gt;
+            </code></pre>
+            <p>
+            というように記述します。また、いくつかオプションがあります。
+            </p>
+            <table>
+            <tr>
+            <th>autoSlide</th><td>スライドショーを自動にするかどうかを選べます。「true」で自動、「false」で自動では動かないようにできます。<br />初期値は「true」です。</td>
+            </tr>
+            <tr>
+            <tr>
+            <th>effect</th><td>スライドする効果の種類です。「'fade'」でフェードイン、「'slide'」で横スライドします。<br />初期値は「'fade'」です。</td>
+            </tr>
+            <th>type</th><td>スライドショーのタイプを選べます。「'repeat'」はカルーセルタイプで画像が最後まで表示されると最初に戻り、ループします。「'stop'」は最後の画像が表示されるとそこでストップします。<br />autoSlideの値がtrueで、typeの値がstopの場合、最後の画像が表示されない限りは常にautoSlideが有効になっています。最後の画像が表示されると、戻る方向に画像を表示しても、autoSlideが無効になります。<br />初期値は「'repeat'」です。</td>
+            </tr>
+            <tr>
+            <th>interval</th><td>次のスライドまでの止まっている時間です。単位はミリ秒ですが、単位まで記述する必要はありません。<br />初期値は「3000」です。</td>
+            </tr>
+            <tr>
+            <th>duration</th><td>スライドするスピードです。単位はミリ秒ですが、単位まで記述する必要はありません。<br />初期値は「500」です。</td>
+            </tr>
+            <tr>
+            <th>imgHoverStop</th><td>画像にホバーした際、スライドをストップするかを選べます。「true」でスライドをストップ、「false」でスライドをストップしないようにできます。<br />初期値は「true」です。</td>
+            </tr>
+            <tr>
+            <th>navHoverStop</th><td>画像下のページネーションにホバーした際、スライドをストップするかを選べます。「true」でスライドをストップ、「false」でスライドをストップしないようにできます。<br />初期値は「true」です。</td>
+            </tr>
+            </table>
+            <h3>ページトップへの戻りリンクについて</h3>
+            <p>
+            ページトップへの戻りリンクは、ページの右下に配置しており、スクロールすると現れる仕組みになっています。こうすることにより、ページトップへの戻りリンクが目に入りやすく、ユーザにこのリンクを、より活用していただけるのではないかと思います。
+            </p>
+            <h3>JavaScript(jQuery）の使用について</h3>
+            <p>
+            当CSSデザインテンプレートでは、JavaScript(jQueryライブラリ）を使用しています。使用している箇所は、インデックスページのスライドショー、インデックスページのスライドショー下の3つコンテンツが並んでいるエリア、ページトップへの戻りリンクです。そのため、JavaScriptを有効にしていないブラウザではレイアウト崩れを起こしてしまいますので、ご留意ください。
+            </p>
+            <h3>カスタマイズについて</h3>
+            <p>
+                カスタマイズはご自由になさってください。<br />
+                制限はありません。
+            </p>
+            <p>
+                その他、不具合などございましたら<br />
+                <a href="http://www.coolwebwindow.com/" target="_blank">CoolWebWindow</a>にお知らせください。<br />
+            </p>
+            <h2>サンプルタグについて</h2>
+            <p>
+                以下、サンプルタグになります。ご利用の際は参考にしてみてください。
+            </p>
+            <h2>h2タグ</h2>
+            <h3>h3タグ</h3>
+            <h4>h4タグ</h4>
+            <h5>h5タグ</h5>
+            <h6>h6タグ</h6>
+            <p>
+                <em>強調（em）</em>
+                <strong>より強い強調（strong）</strong>
+                <ins>追加（ins）</ins>
+                <del>削除（del）</del>
+                <br />
+                <a href="#">テキストアンカー</a>
+            </p>
+            <h3>リスト</h3>
+            <h4>普通のリスト</h4>
+            <ul>
+                <li>普通のリスト1</li>
+                <li>普通のリスト2</li>
+                <li>普通のリスト3</li>
+            </ul>
+            <h4>番号付きリスト</h4>
+            <ol>
+                <li>番号付きリスト1</li>
+                <li>番号付きリスト2</li>
+                <li>番号付きリスト3<br />li要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。<br /></li>
+            </ol>
+            <h4>定義リスト</h4>
+            <dl>
+                <dt>定義リスト1</dt>
+                <dd>定義した用語の説明</dd>
+                <dt>定義リスト2</dt>
+                <dd>定義した用語の説明</dd>
+                <dt>定義リスト3</dt>
+                <dd>定義した用語の説明<br />dd要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。しかし、dt要素にはインライン要素しか記述することができません。</dd>
+            </dl>
+            <h3>テーブル</h3>
+            <table summary="">
+                <tr><th>見出し1</th><th>見出し2</th><th>見出し3</th><th>見出し4</th><th>見出し5</th></tr>
+                <tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
+                <tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
+                <tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
+            </table>
+        </div><!-- /#conL -->
+        <div id="conR">
+            <div class="submenu">
+                <h3>事業内容</h3>
+                <h4>ネット事業</h4>
+                <ul>
+                    <li><a href="index.html">SEO / LPO</a></li>
+                    <li><a href="index.html">広告代理</a></li>
+                    <li><a href="index.html">コンサルティング</a></li>
+                </ul>
+                <h4>ホームページ制作事業</h4>
+                <ul>
+                    <li><a href="index.html">ウェブサイト構築</a></li>
+                    <li><a href="index.html">モバイルサイト構築</a></li>
+                    <li><a href="index.html">iPhone向けサイト構築</a></li>
+                </ul>
+                <h4>アプリ開発事業</h4>
+                <ul>
+                    <li><a href="index.html">iPhone / iPad向けアプリ開発</a></li>
+                    <li><a href="index.html">Android向けアプリ開発</a></li>
+                </ul>
+            </div><!-- /.submenu -->
+            <div class="bnrR">
+                <ul>
+                    <li><a href="index.html"><img src="images/bnr_r.jpg" alt="" /></a></li>
+                    <li><a href="index.html"><img src="images/bnr_r.jpg" alt="" /></a></li>
+                </ul>
+            </div><!-- /.bnrR -->
+        </div><!-- /#conR -->
+    </div><!-- /#contents -->
+    <div id="footMenu">
+        <ul>
+            <li><a href="sample.html">事業内容</a></li>
+            <li><a href="sample.html">会社概要</a></li>
+            <li><a href="index.html">採用情報</a></li>
+            <li><a href="index.html">投資家情報</a></li>
+            <li><a href="index.html">お問い合わせ</a></li>
+            <li><a href="index.html">グループ会社</a></li>
+        </ul>
+    </div><!-- /#footerMenu -->
+    <div id="footer">
+        <div class="copyright">Copyright &copy; 2013 YOUR SITE NAME All Rights Reserved.</div>
+    </div><!-- /#footer -->
+</div><!-- /#container -->
+<div id="pageTop">
+    <a href="#">ページのトップへ戻る</a>
+</div><!-- /#pageTop -->
+</body>
+</html>
